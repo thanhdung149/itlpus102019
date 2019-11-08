@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>overflow attr css</title>
+	<style type="text/css">
+		pre{color: red;font-size: 20px;}
+
+		.exam1{
+			background-color: #E39888;
+			color:#48F905;
+			width: 800px;
+			height: 150px;
+			margin-bottom: 165px;
+			overflow: visible;
+		}
+		.exam2{
+			background-color: #E39888;
+			color:#48F905;
+			width: 800px;
+			height: 150px;
+			margin-bottom: 165px;
+			overflow: hidden;
+		}
+		.exam3{
+			background-color: #E39888;
+			color:#48F905;
+			width: 800px;
+			height: 150px;
+			margin-bottom: 165px;
+			overflow: scroll;
+		}.exam4{
+			background-color: #E39888;
+			color:#48F905;
+			width: 800px;
+			height: 150px;
+			margin-bottom: 165px;
+			overflow: auto;
+		}
+
+	</style>
+</head>
+<body>
+	<pre>
+			THUỘC TÍNH "OVERFLOW" TRONG CSS
+		- Thuộc tính overlow kiểm soát điều gì xảy ra khi nội dung quá lớn so với thẻ chứa nội dung.
+		1 - visible - ( giá trị mặc định ) sẽ được hiển thị
+        2 - hidden - ẩn đi phần nội dung vượt quá kích cỡ của thẻ hmtl
+        3 - scroll - luôn hiện thanh scroll chuột khi nội dung vượt kích cỡ
+        của thẻ html và cũng sẽ hiện khi nội dung không vượt quá
+        4 - auto - tự động hiện thanh scroll nếu nội dung vượt quá và không hiện thanh scrollbar khi mà
+        nội dung không vượt quá kích cỡ thẻ
+	</pre>
+	<h1>overlow:visible - mặc định</h1>
+	<div class="exam1">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mattis mauris non posuere. Vestibulum pellentesque scelerisque bibendum. Praesent tempor fringilla eros, sed tristique sapien lobortis vel. Pellentesque sagittis, sapien sit amet vestibulum sagittis, nisl massa aliquam nisi, nec mattis purus metus nec massa. Sed imperdiet pellentesque mauris eu consectetur. Donec fermentum lacus sit amet enim faucibus egestas id facilisis nunc. Proin a cursus ligula, ac pellentesque leo. Donec condimentum in sapien et blandit. Phasellus commodo sem laoreet justo vulputate, sed placerat sapien vulputate.
+
+		Vestibulum id erat eget lacus volutpat molestie id ac lectus. Duis et gravida purus. Ut odio leo, sollicitudin at semper non, placerat quis nisi. Vestibulum sagittis metus eget leo congue eleifend. Aliquam quis fermentum lorem, et consectetur tortor. In laoreet odio et velit cursus, ut lobortis nulla varius. Proin nec tempus nisl. Praesent auctor tellus aliquam quam porta interdum. Nullam scelerisque, est ut fermentum pretium, purus nulla bibendum risus, at ullamcorper ex libero quis massa. Sed feugiat metus sed nibh gravida bibendum. Sed nec mollis odio. Maecenas urna erat, lacinia at tempus sed, laoreet blandit sem.
+	</div>
+	<h1>overlow:hidden</h1>
+	<div class="exam2">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mattis mauris non posuere. Vestibulum pellentesque scelerisque bibendum. Praesent tempor fringilla eros, sed tristique sapien lobortis vel. Pellentesque sagittis, sapien sit amet vestibulum sagittis, nisl massa aliquam nisi, nec mattis purus metus nec massa. Sed imperdiet pellentesque mauris eu consectetur. Donec fermentum lacus sit amet enim faucibus egestas id facilisis nunc. Proin a cursus ligula, ac pellentesque leo. Donec condimentum in sapien et blandit. Phasellus commodo sem laoreet justo vulputate, sed placerat sapien vulputate.
+
+		Vestibulum id erat eget lacus volutpat molestie id ac lectus. Duis et gravida purus. Ut odio leo, sollicitudin at semper non, placerat quis nisi. Vestibulum sagittis metus eget leo congue eleifend. Aliquam quis fermentum lorem, et consectetur tortor. In laoreet odio et velit cursus, ut lobortis nulla varius. Proin nec tempus nisl. Praesent auctor tellus aliquam quam porta interdum. Nullam scelerisque, est ut fermentum pretium, purus nulla bibendum risus, at ullamcorper ex libero quis massa. Sed feugiat metus sed nibh gravida bibendum. Sed nec mollis odio. Maecenas urna erat, lacinia at tempus sed, laoreet blandit sem.
+	</div>
+	<h1>overlow:scroll</h1>
+	<div class="exam3">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mattis mauris non posuere. Vestibulum pellentesque scelerisque bibendum. Praesent tempor fringilla eros, sed tristique sapien lobortis vel. Pellentesque sagittis, sapien sit amet vestibulum sagittis, nisl massa aliquam nisi, nec mattis purus metus nec massa. Sed imperdiet pellentesque mauris eu consectetur. Donec fermentum lacus sit amet enim faucibus egestas id facilisis nunc. Proin a cursus ligula, ac pellentesque leo. Donec condimentum in sapien et blandit. Phasellus commodo sem laoreet justo vulputate, sed placerat sapien vulputate.
+
+		Vestibulum id erat eget lacus volutpat molestie id ac lectus. Duis et gravida purus. Ut odio leo, sollicitudin at semper non, placerat quis nisi. Vestibulum sagittis metus eget leo congue eleifend. Aliquam quis fermentum lorem, et consectetur tortor. In laoreet odio et velit cursus, ut lobortis nulla varius. Proin nec tempus nisl. Praesent auctor tellus aliquam quam porta interdum. Nullam scelerisque, est ut fermentum pretium, purus nulla bibendum risus, at ullamcorper ex libero quis massa. Sed feugiat metus sed nibh gravida bibendum. Sed nec mollis odio. Maecenas urna erat, lacinia at tempus sed, laoreet blandit sem.
+	</div>
+	<h1>overlow:auto</h1>
+	<div class="exam4">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies mattis mauris non posuere. Vestibulum pellentesque scelerisque bibendum. Praesent tempor fringilla eros, sed tristique sapien lobortis vel. Pellentesque sagittis, sapien sit amet vestibulum sagittis, nisl massa aliquam nisi, nec mattis purus metus nec massa. Sed imperdiet pellentesque mauris eu consectetur. Donec fermentum lacus sit amet enim faucibus egestas id facilisis nunc. Proin a cursus ligula, ac pellentesque leo. Donec condimentum in sapien et blandit. Phasellus commodo sem laoreet justo vulputate, sed placerat sapien vulputate.
+
+		Vestibulum id erat eget lacus volutpat molestie id ac lectus. Duis et gravida purus. Ut odio leo, sollicitudin at semper non, placerat quis nisi. Vestibulum sagittis metus eget leo congue eleifend. Aliquam quis fermentum lorem, et consectetur tortor. In laoreet odio et velit cursus, ut lobortis nulla varius. Proin nec tempus nisl. Praesent auctor tellus aliquam quam porta interdum. Nullam scelerisque, est ut fermentum pretium, purus nulla bibendum risus, at ullamcorper ex libero quis massa. Sed feugiat metus sed nibh gravida bibendum. Sed nec mollis odio. Maecenas urna erat, lacinia at tempus sed, laoreet blandit sem.
+	</div>
+	
+</body>
+</html>
