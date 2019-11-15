@@ -1,0 +1,93 @@
+.clearfix::after{
+	content:"";
+	clear: both;
+	display: table;
+}
+/* clearfix su dung de tranh cho cac the con truot khoi the me, nhu ul & li*/
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.site-wrapper{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+header .header-inner{
+	background: gray;
+	font-size: 32px;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.main-navigation .main-menu{
+	list-style: none;
+	background: yellow;
+	margin: 0;
+	padding: 0;
+}
+/* li.menu-item là li cấp 1 */
+.main-navigation .main-menu li.menu-item{
+	background: orange;
+	float: left;
+	position: relative;
+}
+/* li.submenu-item là li cấp 2,3,4... */
+.main-navigation .main-menu li.submenu-item{
+	position: relative;
+}
+/* khi hover vào menu cấp 1 */
+.main-navigation .main-menu li.menu-item:hover>ul.submenu{
+	display: block;
+}
+/* khi hover vào menu cấp 2 trở lên */
+.main-navigation .main-menu li.submenu-item:hover>ul.submenu{
+	display: block;
+}
+
+.main-navigation .main-menu li a{
+	color: white;
+	font-size: 18px;
+	
+	background: orange;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: block;
+}
+
+.main-navigation .main-menu li a:hover{
+	background: tomato;
+
+}
+
+/*
+begin submenu
+*/
+	/*
+	submenu nằm trong li.menu-item cấp 1
+	*/
+nav li.menu-item>.submenu{
+	display: none;
+	position: absolute;
+	min-width: 300px;
+	top: 40px;
+	left: 0;
+}
+	/*
+	submenu nằm trong li.menu-item cấp 2, cấp 3, cấp 4...
+	*/
+nav li.menu-item .submenu .submenu{
+	display: none;
+	width: 300px;
+	position: absolute;
+	top: 0;
+	left: 300px;
+}
+nav .submenu > li.submenu-item{
+	border-bottom: 1px solid white;
+}
+/*
+end submenu
+*/
