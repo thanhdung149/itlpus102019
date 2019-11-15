@@ -1,0 +1,41 @@
+*{margin: 0;padding: 0;}
+header #top{
+	width: 1200px;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: auto;
+}
+header #top h1{
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+header #ads img{
+	width: 100%;
+}
+header #top nav{
+	float: left;
+}
+header #top nav ul {
+	overflow: auto;
+	list-style-type: none;
+}
+header #top nav ul li{
+	float: left;
+	
+}
+header #top nav ul li a{
+	display: inline-block;
+	padding: 15px 10px;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #444444;
+	margin-right: 15px;
+}
+header #top nav ul li:hover a{
+	margin-right: 15px;
+	color: #0771CE;
+	border-bottom: 2px solid #0771CE;
+
+}

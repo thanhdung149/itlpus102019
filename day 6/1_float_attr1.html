@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style type="text/css">
+		.container{margin:30px 0px 30px 0px;}
+		#sidebar{background: chartreuse;width: 50%;float: left;}
+		#content{background: violet;}
+		#content1{background: chartreuse;width: 50%;float: left;}
+		#content2{background: violet;width: 200px;float: left;}
+		#content3{background: green;width: 200px;float: left;}
+		#content4{background: red;width: 200px;}
+
+	</style>
+</head>
+<body>
+	<pre>
+		Thuộc tính float trong css
+		- float có nghĩa là trôi
+		- float có 3 giá trị
+			+ float:left; trôi sang trái
+			+ float:left; trôi sang phải
+			+ float:none; không trôi (mặc định)
+		- khi 1 thẻ float:left hay right nó sẽ kéo thẻ bên cạnh nó trôi sang bên trái hay phải nếu vẫn còn diện tích.
+	<strong style="color: red;font-size: 20px;">
+	- chú ý: các thẻ bị kéo lên là những thẻ có độ rộng không xác định, nếu có độ rộng xác định thì sẽ không bị kéo lên.
+	</strong>
+	</pre>
+
+	<div class="container">
+		<div id="sidebar">
+			Sidebar
+		</div>
+		<div id="content">
+			Main content
+		</div>
+	</div>
+	<div class="box1">
+		<div id="content1">
+			content1
+		</div>
+		<div id="content2">
+			content2
+		</div>
+		<div id="content3">
+			content3
+		</div>
+		<div id="content4">
+			content4
+		</div>
+	</div>
+</body>
+</html>
