@@ -1,0 +1,1 @@
+alert("chen file js tu ngoai");
